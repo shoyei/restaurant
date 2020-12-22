@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/Photo_Mar_27__13_57_35.0.jpg');
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  font-family: 'Caveat', cursive;
+  color: rgb(51, 51, 51);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding-right: 10px;
+    background-color: rgb(236, 219, 65);
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.76); 
+    box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.76);
+    order: 1;
+}
+
+.navbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    width: 350px;
+    height: 117px;
+    background-color: rgb(238, 234, 225);
+    opacity: .9;
+    position: fixed;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    order: 2;
+}
+
+#logo img{
+    max-width: 300px;
+    max-height: 100%;
+    position: absolute;
+    opacity: 100%;
+}
+
+#maincontent {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+}
+
+#maincontentbanner {
+    width: 60%;
+    height: 120px;
+    background-color: rgb(238, 234, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+}
+
+#orderBtn {
+    margin-top: 20px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#orderBtn img {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    width: 150px;
+  -webkit-filter: drop-shadow(0px 0px 5px #222);
+  filter: drop-shadow(0px 0px 5px #222);
+}
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(238, 234, 225);
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    font-size: 15px;
+    -webkit-box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.76); 
+    box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.76);
+    order: 4;
+}
+
+#footerhours {
+    justify-self: flex-start;
+    margin-left: 15px;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    text-shadow: 0px 0px 17px #FFEC08;
+}
+
+#footerspacer {
+    width:100%;
+}
+
+.social {
+    height: 50px;
+    opacity: .7;
+}
+
+#twitlogo {
+    height: 45px;
+}
+
+#footertext {
+    width: 200px;
+    margin-left: 10px;
+}
+
+#footerlogo {
+    width: 120px;
+    height: auto;
+    margin: 5px 15px 5px 15px;
+}
+
+#bannerquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    background-color: rgb(238, 234, 225);
+    opacity: .8;
+    font-size: 80px;
+    margin: auto;
+}
